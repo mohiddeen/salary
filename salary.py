@@ -9,7 +9,7 @@ encoder = joblib.load("salary_encoder.pkl")
 st.title("Salary-Based Expense Prediction")
 st.write("Enter your details below to predict your estimated monthly expense.")
 
-salary = st.number_input("Enter your salary (N30-N2000)", min_value=30, max_value=2000000, step=1)
+salary = st.number_input("Enter your salary", min_value=30, max_value=2000000, step=1)
 level = st.number_input("Enter your level (1-10)", min_value=1, max_value=10, step=1)
 qualification = st.selectbox("Select your qualification",
                              ["noformal", "secondary", "certificate", "nce", "bsc", "msc", "phd", "prof"])
