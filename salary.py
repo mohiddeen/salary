@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 import numpy as np
 
-model = joblib.load("../models/salary_model.pkl")
-encoder = joblib.load("../models/salary_encoder.pkl")
+model = joblib.load("salary_model.pkl")
+encoder = joblib.load("salary_encoder.pkl")
 
 st.title("Salary-Based Expense Prediction")
 st.write("Enter your details below to predict your estimated monthly expense.")
