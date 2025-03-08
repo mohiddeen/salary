@@ -6,7 +6,7 @@ import numpy as np
 model = joblib.load("salary_model.pkl")
 encoder = joblib.load("salary_encoder.pkl")
 
-st.title("Salary-Based Expense Prediction")
+st.title("AI Salary-Based Expense Prediction")
 st.write("Enter your details below to predict your estimated monthly expense.")
 
 salary = st.number_input("Enter your salary", min_value=30, max_value=2000000, step=1)
